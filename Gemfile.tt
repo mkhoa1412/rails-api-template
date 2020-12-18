@@ -67,7 +67,6 @@ group :development, :test do
   # Configuration comes from the environment
   # but we use dotenv for development and test
   gem 'dotenv-rails', require: 'dotenv/rails-now'
-  gem 'gem-that-requires-env-variables'
 
   # Use factories for test-specific data that you need
   gem "factory_bot_rails"

@@ -2,7 +2,7 @@
 require 'pathname'
 
 def setup
-  verify_local_database_config!
+  # verify_local_database_config!
   log '💎 Installing gems'
   # Only do bundle install if the much-faster
   # bundle check indicates we need to

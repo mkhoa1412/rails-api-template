@@ -18,8 +18,8 @@ def apply_template!
   template "README.md.tt", force: true
   remove_file "README.rdoc"
 
-  template ".env.development.tt"
-  template ".env.test.tt"
+  # template ".env.development.tt"
+  # template ".env.test.tt"
   template ".gitignore.tt", force: true
 
   template "bin/setup.tt", force: true
@@ -31,7 +31,7 @@ def apply_template!
   template "bin/release.tt"
   template "Procfile.tt"
 
-  # remove_file "config/database.yml"
+  remove_file "config/database.yml"
   remove_file "config/secrets.yml"
 
   template "lib/tasks/redis.rake.tt"

@@ -1,8 +1,6 @@
 # rails-app-template-sustainable
 
-This is a Rails Application Template that will create a Rails app set up similarly to the one outlined in
-[Sustainable Web Development with Ruby on Rails](https://sustainable-rails.com).
-
+This is a Rails Application Template that based on https://github.com/davetron5000/rails-app-template-sustainable
 **This is for Rails 6.1 only!**
 
 ## To use

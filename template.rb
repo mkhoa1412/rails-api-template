@@ -56,7 +56,6 @@ def apply_template!
   copy_file "lib/templates/rails/job/job.rb.tt"
   copy_file "config/initializers/postgres.rb"
   copy_file "config/initializers/sidekiq.rb"
-  copy_file "config/initializers/imgproxy.rb"
   copy_file "app/controllers/concerns/exception_handler.rb"
   copy_file "app/controllers/concerns/response.rb"
 

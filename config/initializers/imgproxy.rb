@@ -1,0 +1,1 @@
+Imgproxy.extend_shrine!

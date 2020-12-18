@@ -174,15 +174,15 @@ end
 # In that case, use `git clone` to download them to a local temporary dir.
 def add_template_repository_to_source_path
   if __FILE__ =~ %r{\Ahttps?://}
-    source_paths.unshift(tempdir = Dir.mktmpdir("rails-app-template-sustainable-"))
+    source_paths.unshift(tempdir = Dir.mktmpdir("rails-api-template-"))
     at_exit { FileUtils.remove_entry(tempdir) }
     git clone: [
       "--quiet",
-      "https://github.com/davetron5000/rails-app-template-sustainable.git",
+      "https://github.com/mkhoa1412/rails-api-template.git",
       tempdir
     ].map(&:shellescape).join(" ")
 
-    if (branch = __FILE__[%r{rails-app-template-sustainable/(.+)/template.rb}, 1])
+    if (branch = __FILE__[%r{rails-api-template/(.+)/template.rb}, 1])
       Dir.chdir(tempdir) { git checkout: branch }
     end
   else

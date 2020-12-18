@@ -31,8 +31,8 @@ def apply_template!
   template "bin/release.tt"
   template "Procfile.tt"
 
-  remove_file "config/database.yml"
-  remove_file "config/secrets.yml"
+  # remove_file "config/database.yml"
+  # remove_file "config/secrets.yml"
 
   template "lib/tasks/redis.rake.tt"
 

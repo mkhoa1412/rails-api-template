@@ -3,5 +3,5 @@
 --skip-sprockets 
 --skip-spring 
 --skip-listen 
---skip-action-cable 
+--skip-action-cable
 --database=postgresql 

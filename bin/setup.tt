@@ -8,10 +8,6 @@ def setup
   # bundle check indicates we need to
   system! 'bundle check || bundle install'
 
-  system! 'rails generate devise:install'
-
-  system! 'rails generate strong_migrations:install'
-
   # log '☕️ Installing Node modules'
   # # Only do yarn install if the much-faster
   # # yarn check indicates we need to. Note that

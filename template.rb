@@ -36,14 +36,6 @@ def apply_template!
 
   template "lib/tasks/redis.rake.tt"
 
-  insert_into_file "config/application.rb",  
-    after: /^module \s*$/ do
-      [
-        "Dotenv::Railtie.load",
-        "HOSTNAME = ENV['HOSTNAME']"
-      ].join("\n") + "\n"
-    end
-
   insert_into_file "config/application.rb",
     before: /^  end\s*$/ do
       [
